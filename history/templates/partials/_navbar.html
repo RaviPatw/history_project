@@ -1,0 +1,29 @@
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark border-bottom border-danger shadow-sm">
+  <div class="container-fluid px-4">
+    <a class="navbar-brand fw-bold" href="{% url 'index' %}" style="font-family: 'Georgia', serif; color: #fdf6e3;">
+      🏛️ Virtual Museum
+    </a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarContent">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse justify-content-end" id="navbarContent">
+      <ul class="navbar-nav mb-2 mb-lg-0">
+        <li class="nav-item">
+          <a class="nav-link" href="{% url 'index' %}">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="{%url 'unit_page' 'unit2'%}">Unit 2</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="{%url 'unit_page' 'unit3'%}">Unit 3</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="{%url 'unit_page' 'unit7'%}">Unit 7</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="{%url 'themes'%}">Themes</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>

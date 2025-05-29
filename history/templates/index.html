@@ -1,0 +1,59 @@
+{% extends 'base.html' %}
+{% block content %}
+  <main class="container my-5">
+    <header class="text-center mb-5">
+      <h1 class="display-4 fw-bold" style="font-family: 'Georgia', serif; color: #00274d;">
+        Welcome to the Virtual Museum
+      </h1>
+      <p class="lead" style="font-family: 'Georgia', serif; color: #4b4b4b;">
+        Explore the powerful themes of <strong>Unity, Rebellion, and Resistance</strong> that shaped America’s history.
+      </p>
+    </header>
+
+    <section class="row text-center">
+      <div class="col-md-4 mb-4">
+        <div class="card h-100 shadow-sm border-danger" style="font-family: 'Georgia', serif;">
+          <div class="card-body">
+            <h3 class="card-title text-danger">Unit 2</h3>
+            <p class="card-text text-dark">
+              Early Unity & Resistance — discover how early colonial resistance sparked unity and conflict.
+            </p>
+            <a href="{% url 'unit_page' 'unit2' %}" class="btn btn-outline-danger mt-3">Explore Unit 2</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-4 mb-4">
+        <div class="card h-100 shadow-sm border-danger" style="font-family: 'Georgia', serif;">
+          <div class="card-body">
+            <h3 class="card-title text-danger">Unit 3</h3>
+            <p class="card-text text-dark">
+              Revolutionary Resistance — learn about the revolution that united and divided the colonies.
+            </p>
+            <a href="{% url 'unit_page' 'unit3' %}" class="btn btn-outline-danger mt-3">Explore Unit 3</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-4 mb-4">
+        <div class="card h-100 shadow-sm border-danger" style="font-family: 'Georgia', serif;">
+          <div class="card-body">
+            <h3 class="card-title text-danger">Unit 7</h3>
+            <p class="card-text text-dark">
+              Civil War & Modern Parallels — examine rebellion and unity through historic and contemporary lenses.
+            </p>
+            <a href="{% url 'unit_page' 'unit7' %}" class="btn btn-outline-danger mt-3">Explore Unit 7</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="text-center mt-5" id="themes">
+      <h2 style="font-family: 'Georgia', serif; color: #00274d;">Themes</h2>
+      <p style="font-family: 'Georgia', serif; color: #4b4b4b; max-width: 700px; margin: auto;">
+        This virtual museum highlights the complex interplay of <strong>Rebellion & Resistance</strong>, <strong>Unity</strong>, and <strong>Disunity</strong> throughout American history — from the colonial period to modern movements.
+      </p>
+      <a href="{%url 'themes'%}" class="btn btn-danger mt-3">Explore Themes</a>
+    </section>
+  </main>
+{% endblock content %}
