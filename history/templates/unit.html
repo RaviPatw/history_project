@@ -34,7 +34,11 @@
 
             <h3 class="mb-2" style="color: #8b0000; font-family: 'Merriweather', serif;">{{ doc.title }}</h3>
             <p class="text-muted fst-italic mb-2" style="font-size: 0.9rem;">
-              by {{ doc.author }} &nbsp;&middot;&nbsp; {{ doc.date|date:"M d, Y" }}
+            {%if doc.is_bacon%}
+                    {{ doc.author }} &nbsp;&middot;&nbsp; 1676
+            {%else%}
+            {{ doc.author }} &nbsp;&middot;&nbsp; {{ doc.date|date:"M d, Y" }}
+            {%endif %}
             </p>
             <p class="mb-3" style="font-size: 1rem; line-height: 1.5;">{{ doc.description }}</p>
             {% if doc.link %}
